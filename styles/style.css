@@ -15,3 +15,9 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
 }
+
+@supports (font-variation-settings: normal) {
+  .page {
+    font-weight: 400;
+  }
+}
