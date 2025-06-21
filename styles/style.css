@@ -47,6 +47,7 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  text-transform: uppercase;
 }
 
 .header__subtitle {
@@ -92,6 +93,22 @@
   row-gap: 27px;
 }
 
+.card__image-container {
+  position: relative;
+}
+
+.card__watermark {
+  font-family: var(--accent-font), sans-serif;
+  position: absolute;
+  text-shadow: 0 0 white;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 .card__image {
   max-inline-size: 100%;
 }
@@ -106,4 +123,12 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+
+@supports ((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
+  span {
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    text-shadow: none;
+  }
 }
