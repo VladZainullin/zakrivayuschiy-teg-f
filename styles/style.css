@@ -31,12 +31,14 @@
 }
 
 .header {
+  margin-top: 100px;
   display: flex;
+  flex-wrap: nowrap;
   gap: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 2px solid black;
   font-family: var(--accent-font), sans-serif;
   inline-size: clamp(375px, 100vw,700px);
   block-size: clamp(327px, 52vh ,368px);
@@ -49,4 +51,52 @@
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
+}
+
+.header + .main {
+  margin-top: 100px;
+}
+
+.main {
+  font-size: 18px;
+}
+
+.card {
+  background-color: white;
+  inline-size: clamp(375px, 100vw,700px);
+  min-block-size: 760px;
+  border: 2px solid black;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  padding: 3px 10px;
+}
+
+.card__content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 27px;
+}
+
+.card__image {
+  max-inline-size: 100%;
+}
+
+.card__button {
+  inline-size: 138px;
+  block-size: 38px;
+  align-self: end;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
