@@ -2,5 +2,4 @@
 :root {
   --main-font: 'Inter-Variable';
   --accent-font: 'PressStart2P-Regular';
-  --inline-size: clamp(375px, 100vw, 700px);
 }

@@ -37,12 +37,9 @@
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  inline-size: var(--inline-size);
   font-family: var(--accent-font), sans-serif;
-  max-inline-size: 696px;
-  min-inline-size: 375px;
-  max-block-size: 368px;
-  min-block-size: 375px;
+  inline-size: clamp(375px, 100vw,700px);
+  block-size: clamp(327px, 52vh ,368px);
   background-color: white;
 }
 
