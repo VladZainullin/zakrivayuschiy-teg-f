@@ -61,6 +61,13 @@
   font-size: 18px;
 }
 
+.main__item-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 50px
+}
+
 .card {
   background-color: white;
   inline-size: clamp(375px, 100vw,700px);
@@ -82,7 +89,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 27px;
+  row-gap: 27px;
 }
 
 .card__image {
