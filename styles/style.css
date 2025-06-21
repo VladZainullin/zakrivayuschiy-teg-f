@@ -19,6 +19,7 @@
   align-items: center;
   background-attachment: fixed;
   background-image: url('../images/background.png');
+  background-color: gray;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,6 +41,7 @@
   align-items: center;
   border: 2px solid black;
   font-family: var(--accent-font), sans-serif;
+  text-transform: uppercase;
   inline-size: clamp(375px, 100vw,700px);
   block-size: clamp(327px, 52vh ,368px);
   background-color: white;
@@ -47,7 +49,6 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
-  text-transform: uppercase;
 }
 
 .header__subtitle {
@@ -86,6 +87,7 @@
 }
 
 .card__content {
+  line-height: 21px;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -114,6 +116,8 @@
 }
 
 .card__button {
+  font-family: var(--accent-font), sans-serif;
+  line-height: 90%;
   inline-size: 138px;
   block-size: 38px;
   align-self: end;
