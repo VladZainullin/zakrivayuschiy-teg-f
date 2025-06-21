@@ -78,9 +78,10 @@
 }
 
 .card__title {
+  margin-top: 4px;
   font-weight: 700;
-  font-size: 18px;
   line-height: 100%;
+  word-spacing: -0.3px;
   letter-spacing: 0;
   vertical-align: middle;
   padding: 3px 10px;
@@ -89,10 +90,13 @@
 .card__content {
   line-height: 21px;
   padding: 25px;
+  padding-top: 28px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   row-gap: 27px;
+  word-spacing: 2px;
+  letter-spacing: 0;
 }
 
 .card__image-container {
@@ -118,7 +122,8 @@
 .card__button {
   font-family: var(--accent-font), sans-serif;
   line-height: 90%;
-  inline-size: 138px;
+  font-size: 14px;
+  inline-size: 130px;
   block-size: 38px;
   align-self: end;
   background-color: transparent;
