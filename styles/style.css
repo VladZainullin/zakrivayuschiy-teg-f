@@ -14,6 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,11 +57,7 @@
 }
 
 .header + .main {
-  margin-top: 100px;
-}
-
-.main {
-  font-size: 18px;
+  margin-block-start: 100px;
 }
 
 .main__item-list {
@@ -120,6 +117,7 @@
 }
 
 .card__button {
+  border-style: solid;
   font-family: var(--accent-font), sans-serif;
   line-height: 90%;
   font-size: 14px;
@@ -132,6 +130,57 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.main + .footer {
+  margin-block-start: 52px;
+}
+
+.footer {
+  margin-block-end: 100px;
+}
+
+@media (width >= 1440px) {
+  .footer {
+    margin-block-end: 105px;
+  }
+}
+
+.footer__button {
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  padding-inline-start: 19px;
+  padding-inline-end: 20.5px;
+  background-color: white;
+  font-size: 14px;
+}
+
+@media (width >= 1440px) {
+  .footer__button {
+    padding-block-start: 18.5px;
+    padding-block-end: 18.5px;
+    padding-inline-start: 19px;
+    padding-inline-end: 21px;
+    flex-direction: row;
+  }
+}
+
+.footer__button-image {
+  block-size: 28px;
+  inline-size: 28px;
+}
+
+@media (width >= 1440px) {
+  .footer__button-image {
+    block-size: 21px;
+    inline-size: 21px;
+  }
 }
 
 @supports ((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
