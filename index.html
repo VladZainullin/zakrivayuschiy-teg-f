@@ -279,13 +279,16 @@
     </section>
 </main>
 <footer class="footer">
-    <dialog class="dialog">
-        <button class="dialog__button">
-            <img src="svg/floppy.svg" alt="Дискета"/>
-            <span>Вставьте дискету, чтобы продолжить</span>
+    <dialog id="new-dialog" class="dialog">
+        <img class="dialog__image" src="svg/floppy.svg" alt="Дискета"/>
+        <span class="dialog__title">Вставьте дискету, чтобы продолжить</span>
+        <button onclick="window['new-dialog'].close()"
+                class="dialog__button">
+            Ok
         </button>
     </dialog>
-    <button class="footer__button">
+    <button onclick="window['new-dialog'].showModal()"
+            class="footer__button">
         <img class="footer__button-image" src="svg/floppy.svg" alt="Дискета"/>
         <span class="footer__button-title">Сохранить на память</span>
     </button>

@@ -174,6 +174,7 @@
 
 .footer__button {
   border-style: solid;
+  border-width: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,8 +190,8 @@
 
 @media (width >= 1440px) {
   .footer__button {
-    padding-block-start: 15px;
-    padding-block-end: 15px;
+    padding-block-start: 14px;
+    padding-block-end: 14px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
     flex-direction: row;
@@ -212,6 +213,71 @@
 .footer__button-title {
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
+}
+
+.dialog {
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
+  padding: 30px;
+  border: 2px solid black;
+  background-color: white;
+  align-items: center;
+  min-block-size: 191px;
+  min-inline-size: 341px;
+}
+
+.dialog[open] {
+  display: grid;
+}
+
+.dialog[open]::backdrop {
+  backdrop-filter: blur(10px);
+}
+
+@media (width >= 1440px) {
+  .dialog {
+    min-inline-size: 353px;
+  }
+}
+
+.dialog__image {
+  grid-column: 1;
+  grid-row: 1;
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.dialog__title {
+  grid-column: 2;
+  grid-row: 1;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+
+.dialog__button {
+  background-color: transparent;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  flex-wrap: nowrap;
+  text-transform: uppercase;
+  min-block-size: 38px;
+  min-inline-size: 257px;
+  border: 2px solid black;
+}
+
+@media (width >= 1440px) {
+  .dialog__button {
+    min-inline-size: 293px;
+  }
+}
+
+.page:has(.dialog[open]) {
+  overflow: hidden;
 }
 
 @supports ((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
