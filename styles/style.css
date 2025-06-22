@@ -91,7 +91,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  row-gap: 27px;
+  row-gap: 26px;
   word-spacing: 2px;
   letter-spacing: 0;
 }
@@ -114,6 +114,34 @@
 
 .card__image {
   max-inline-size: 100%;
+}
+
+.card__image_saturate {
+  filter: saturate(500%);
+}
+
+.card__image_grayscale {
+  filter: grayscale(0.75) contrast(0.8);
+}
+
+.card__image_hue-rotate {
+  filter: hue-rotate(30deg);
+}
+
+.card__image_invert {
+  filter: invert(0.8);
+}
+
+.card__image_sepia {
+  filter: sepia(0.8);
+}
+
+.card__image_blur {
+  filter: blur(15px);
+}
+
+.card__image_ {
+  filter: hue-rotate(90deg) contrast(.2);
 }
 
 .card__button {
