@@ -140,7 +140,7 @@
   filter: blur(15px);
 }
 
-.card__image_ {
+.card__image_mix {
   filter: hue-rotate(90deg) contrast(.2);
 }
 
