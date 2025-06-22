@@ -44,7 +44,7 @@
   font-family: var(--accent-font), sans-serif;
   text-transform: uppercase;
   inline-size: clamp(375px, 100vw,700px);
-  block-size: clamp(327px, 52vh ,368px);
+  block-size: clamp(327px, 49vh ,368px);
   background-color: white;
 }
 
@@ -70,14 +70,12 @@
 .card {
   background-color: white;
   inline-size: clamp(375px, 100vw,700px);
-  min-block-size: 760px;
   border: 2px solid black;
 }
 
 .card__title {
-  margin-top: 4px;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 25px;
   word-spacing: -0.3px;
   letter-spacing: 0;
   vertical-align: middle;
@@ -87,12 +85,11 @@
 .card__content {
   line-height: 21px;
   padding: 25px;
-  padding-top: 28px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   row-gap: 26px;
-  word-spacing: 2px;
+  word-spacing: 3px;
   letter-spacing: 0;
 }
 
@@ -113,7 +110,8 @@
 }
 
 .card__image {
-  max-inline-size: 100%;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .card__image_saturate {
@@ -181,20 +179,20 @@
   align-items: center;
   gap: 8px;
   flex-wrap: nowrap;
-  padding-block-start: 15px;
-  padding-block-end: 15px;
+  padding-block-start: 13px;
+  padding-block-end: 13px;
   padding-inline-start: 19px;
-  padding-inline-end: 20.5px;
+  padding-inline-end: 19px;
   background-color: white;
   font-size: 14px;
 }
 
 @media (width >= 1440px) {
   .footer__button {
-    padding-block-start: 18.5px;
-    padding-block-end: 18.5px;
-    padding-inline-start: 19px;
-    padding-inline-end: 21px;
+    padding-block-start: 15px;
+    padding-block-end: 15px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
     flex-direction: row;
   }
 }
@@ -209,6 +207,11 @@
     block-size: 21px;
     inline-size: 21px;
   }
+}
+
+.footer__button-title {
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
 }
 
 @supports ((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
