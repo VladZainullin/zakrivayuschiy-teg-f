@@ -75,21 +75,27 @@
 
 .card__title {
   font-weight: 700;
-  line-height: 100%;
+  line-height: 21px;
   word-spacing: -0.3px;
-  left: 2px;
   padding: 5px 10px 5px 10px;
 }
 
 .card__content {
-  line-height: 21px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  row-gap: 26px;
+  row-gap: 25px;
+}
+
+.card__text {
+  line-height: 21px;
   word-spacing: 3.695px;
   letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 27px;
 }
 
 .card__image-container {
@@ -108,10 +114,11 @@
 }
 
 .card__image {
+  display: block;
   inline-size: 100%;
   block-size: 100%;
-  top: 2px;
-  left: 2px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 }
 
 .card__image_saturate {
