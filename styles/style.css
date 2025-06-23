@@ -75,15 +75,10 @@
 
 .card__title {
   font-weight: 700;
-  line-height: 23px;
+  line-height: 100%;
   word-spacing: -0.3px;
-  padding: 3px 10px 5px 10px;
-}
-
-@media (width >= 1440px) {
-  .card__title {
-    line-height: 25px;
-  }
+  left: 2px;
+  padding: 5px 10px 5px 10px;
 }
 
 .card__content {
@@ -115,6 +110,8 @@
 .card__image {
   inline-size: 100%;
   block-size: 100%;
+  top: 2px;
+  left: 2px;
 }
 
 .card__image_saturate {
