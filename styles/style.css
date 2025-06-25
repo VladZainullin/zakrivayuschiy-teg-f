@@ -220,7 +220,6 @@
 .footer__button svg {
   width: 28px;
   height: 28px;
-  object-fit: contain;
 }
 
 .footer__button-image {
