@@ -56,7 +56,7 @@
                             </p>
                         </div>
                         <button class="card__button">
-                            <span>
+                            <span class="button__text">
                                 Like
                             </span>
                         </button>
@@ -92,7 +92,7 @@
                             </p>
                         </div>
                         <button class="card__button">
-                            <span>
+                            <span class="button__text">
                                 Like
                             </span>
                         </button>
@@ -313,7 +313,7 @@
 </main>
 <footer class="footer">
     <dialog id="new-dialog" class="dialog">
-        <img class="dialog__image" src="svg/floppy.svg" alt="Дискета"/>
+        <img class="dialog__image" src="svg/icons.svg" alt="Дискета"/>
         <span class="dialog__title">Вставьте дискету, чтобы продолжить</span>
         <button onclick="window['new-dialog'].close()"
                 class="dialog__button">
@@ -322,8 +322,10 @@
     </dialog>
     <button onclick="window['new-dialog'].showModal()"
             class="footer__button">
-        <img class="footer__button-image" src="svg/floppy.svg" alt="Дискета"/>
-        <span class="footer__button-title">Сохранить на память</span>
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <use href="./svg/icons.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
     </button>
 </footer>
 <script src="./scripts/like.js"></script>
