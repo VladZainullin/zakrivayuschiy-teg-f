@@ -97,6 +97,25 @@
   row-gap: 27px;
 }
 
+.card__button-group {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: end;
+}
+
+.card__icon-button {
+  border: none;
+  background-color: transparent;
+}
+
+.button {
+  border-style: solid;
+  border-width: 2px;
+  background-color: transparent;
+}
+
 .card__image-container {
   position: relative;
 }
@@ -148,20 +167,12 @@
   filter: hue-rotate(90deg) contrast(.2);
 }
 
-.card__button {
-  border-style: solid;
+.card__like-button {
   font-family: var(--accent-font), sans-serif;
   line-height: 90%;
   font-size: 14px;
   inline-size: 130px;
   block-size: 38px;
-  align-self: end;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .card__button:hover {
