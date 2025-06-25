@@ -209,17 +209,21 @@
 
 @media (width >= 1440px) {
   .footer__button {
-    padding-block-start: 14px;
-    padding-block-end: 14px;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+    padding: 14px 20px;
     flex-direction: row;
   }
 }
 
 .footer__button svg {
-  width: 28px;
-  height: 28px;
+  inline-size: 28px;
+  block-size: 28px;
+}
+
+@media (width >= 1440px) {
+  .footer__button svg {
+    inline-size: 21px;
+    block-size: 21px;
+  }
 }
 
 .footer__button-image {
