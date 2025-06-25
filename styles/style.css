@@ -20,8 +20,8 @@
   align-items: center;
   background-attachment: fixed;
   background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+  linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   background-size: cover;
 }
 
@@ -113,14 +113,27 @@
 .button {
   border-style: solid;
   border-width: 2px;
-  background-color: white;
+  background-image: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
   font-size: 14px;
+}
+
+.button:hover {
+  background-position: left;
+  color: white;
 }
 
 .button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 black;
   transition: box-shadow 0.3s ease;
+}
+
+.button:hover::before {
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
 }
 
 .card__image-container {
@@ -310,7 +323,7 @@
 }
 
 @supports ((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
-  span {
+  .card__watermark {
     -webkit-text-stroke: 1px white;
     text-stroke: 1px white;
     text-shadow: none;
