@@ -101,17 +101,28 @@
   display: flex;
   flex-wrap: nowrap;
   column-gap: 12px;
-  align-items: center;
+  align-items: stretch;
   justify-content: end;
 }
 
+.card__button-group li {
+  display: flex;
+}
+
 .card__icon-button {
+  display: flex;
+  align-items: center;
   border: none;
   background-color: transparent;
 }
 
-.card__icon-button {
+.card__icon-button:focus {
   outline: none;
+}
+
+.card__icon-button:focus-visible {
+  padding: 0 3px;
+  border: 2px solid black;
 }
 
 .button {
