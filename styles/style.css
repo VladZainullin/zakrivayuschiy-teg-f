@@ -113,7 +113,14 @@
 .button {
   border-style: solid;
   border-width: 2px;
-  background-color: transparent;
+  background-color: white;
+  font-size: 14px;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 0 black;
+  transition: box-shadow 0.3s ease;
 }
 
 .card__image-container {
@@ -170,7 +177,6 @@
 .card__like-button {
   font-family: var(--accent-font), sans-serif;
   line-height: 90%;
-  font-size: 14px;
   inline-size: 130px;
   block-size: 38px;
 }
@@ -195,9 +201,6 @@
 }
 
 .footer__button {
-  border-style: solid;
-  border-width: 2px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,14 +291,12 @@
 
 
 .dialog__button {
-  background-color: transparent;
   grid-row: 2;
   grid-column: 1 / span 2;
   flex-wrap: nowrap;
   text-transform: uppercase;
   min-block-size: 38px;
   min-inline-size: 257px;
-  border: 2px solid black;
 }
 
 @media (width >= 1440px) {
