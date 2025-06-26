@@ -258,13 +258,18 @@
   }
 }
 
-.floppy {
+.dialog__floppy {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.save-section__floppy {
   inline-size: 28px;
   block-size: 28px;
 }
 
 @media (width >= 1440px) {
-  .floppy {
+  .save-section__floppy {
     inline-size: 21px;
     block-size: 21px;
   }

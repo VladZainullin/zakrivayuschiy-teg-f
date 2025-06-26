@@ -415,21 +415,21 @@
         </ul>
     </section>
     <section class="save-section">
-        <dialog id="new-dialog" class="dialog">
-            <svg xmlns="http://www.w3.org/2000/svg" class="floppy" viewBox="0 0 29 28">
+        <dialog id="dialog" class="dialog">
+            <svg xmlns="http://www.w3.org/2000/svg" class="dialog__floppy" viewBox="0 0 29 28">
                 <use href="./svg/icons.svg#floppy"></use>
             </svg>
             <span class="dialog__title">Вставьте дискету, чтобы продолжить</span>
-            <button onclick="window['new-dialog'].close()"
+            <button onclick="window['dialog'].close()"
                     class="button dialog__button">
             <span class="button__text">
                 Ок
             </span>
             </button>
         </dialog>
-        <button onclick="window['new-dialog'].showModal()"
+        <button onclick="window['dialog'].showModal()"
                 class="button save-section__button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="floppy" viewBox="0 0 29 28">
+            <svg xmlns="http://www.w3.org/2000/svg" class="save-section__floppy" viewBox="0 0 29 28">
                 <use href="./svg/icons.svg#floppy"></use>
             </svg>
             <span class="button__text">Сохранить на память</span>
