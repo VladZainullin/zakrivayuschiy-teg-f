@@ -373,6 +373,11 @@
   transition: fill 0.3s ease;
 }
 
+.heart:active .core {
+  fill: red;
+  transition: fill 0.3s ease;
+}
+
 .main-body {
   fill: transparent;
 }
@@ -380,6 +385,11 @@
 .heart:hover .main-body {
   fill: black;
   transition: fill 0.05s ease 0.3s;
+}
+
+.heart:active .main-body {
+  fill: red;
+  transition: fill 0.3s ease;
 }
 
 .sparks {
