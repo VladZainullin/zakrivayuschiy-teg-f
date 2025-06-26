@@ -302,7 +302,7 @@
   background-color: white;
   align-items: center;
   min-block-size: 191px;
-  min-inline-size: 341px;
+  inline-size: 341px;
 }
 
 .dialog[open] {
@@ -315,7 +315,7 @@
 
 @media (width >= 1440px) {
   .dialog {
-    min-inline-size: 353px;
+    inline-size: 353px;
   }
 }
 
@@ -342,12 +342,12 @@
   flex-wrap: nowrap;
   text-transform: uppercase;
   min-block-size: 38px;
-  min-inline-size: 257px;
+  inline-size: 257px;
 }
 
 @media (width >= 1440px) {
   .dialog__button {
-    min-inline-size: 293px;
+    inline-size: 293px;
   }
 }
 
