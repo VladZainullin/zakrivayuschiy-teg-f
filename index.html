@@ -28,7 +28,7 @@
     </h2>
 </header>
 <main class="main">
-    <section>
+    <section class="remember-section">
         <ul class="main__item-list">
             <li>
                 <article class="card">
@@ -414,28 +414,28 @@
             </li>
         </ul>
     </section>
-</main>
-<footer class="footer">
-    <dialog id="new-dialog" class="dialog">
-        <svg xmlns="http://www.w3.org/2000/svg" class="floppy" viewBox="0 0 29 28">
-            <use href="./svg/icons.svg#floppy"></use>
-        </svg>
-        <span class="dialog__title">Вставьте дискету, чтобы продолжить</span>
-        <button onclick="window['new-dialog'].close()"
-                class="button dialog__button">
+    <section class="save-section">
+        <dialog id="new-dialog" class="dialog">
+            <svg xmlns="http://www.w3.org/2000/svg" class="floppy" viewBox="0 0 29 28">
+                <use href="./svg/icons.svg#floppy"></use>
+            </svg>
+            <span class="dialog__title">Вставьте дискету, чтобы продолжить</span>
+            <button onclick="window['new-dialog'].close()"
+                    class="button dialog__button">
             <span class="button__text">
                 Ок
             </span>
+            </button>
+        </dialog>
+        <button onclick="window['new-dialog'].showModal()"
+                class="button save-section__button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="floppy" viewBox="0 0 29 28">
+                <use href="./svg/icons.svg#floppy"></use>
+            </svg>
+            <span class="button__text">Сохранить на память</span>
         </button>
-    </dialog>
-    <button onclick="window['new-dialog'].showModal()"
-            class="button footer__button">
-        <svg xmlns="http://www.w3.org/2000/svg" class="floppy" viewBox="0 0 29 28">
-            <use href="./svg/icons.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-    </button>
-</footer>
+    </section>
+</main>
 <script src="./scripts/like.js"></script>
 </body>
 </html>
