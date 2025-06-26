@@ -365,10 +365,21 @@
 
 .core {
   fill: transparent;
+  transition-delay: 0.03s;
+}
+
+.heart:hover .core {
+  fill: black;
+  transition: fill 0.3s ease;
 }
 
 .main-body {
   fill: transparent;
+}
+
+.heart:hover .main-body {
+  fill: black;
+  transition: fill 0.05s ease 0.3s;
 }
 
 .sparks {
