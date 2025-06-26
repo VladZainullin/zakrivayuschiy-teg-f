@@ -362,3 +362,15 @@
     text-shadow: none;
   }
 }
+
+.core {
+  fill: transparent;
+}
+
+.main-body {
+  fill: transparent;
+}
+
+.sparks {
+  opacity: 0;
+}
