@@ -2,4 +2,7 @@
 :root {
   --main-font: 'Inter-Variable';
   --accent-font: 'PressStart2P-Regular';
+
+  --contour-color: black;
+  --animation-fill-color: red;
 }
