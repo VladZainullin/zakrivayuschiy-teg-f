@@ -134,17 +134,12 @@
 
 .card__button-group {
   display: flex;
+  align-items: center;
   column-gap: 12px;
   justify-content: end;
 }
 
-.card__button-group li {
-  display: flex;
-}
-
 .card__icon-button {
-  display: flex;
-  align-items: center;
   border: none;
   background-color: transparent;
 }
@@ -154,8 +149,8 @@
 }
 
 .card__icon-button:focus-visible {
-  padding: 0 3px;
-  border: 2px solid black;
+  outline: 2px solid black;
+  outline-offset: -3px;
 }
 
 .button {
