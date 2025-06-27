@@ -333,7 +333,8 @@
 .save-section__floppy {
   inline-size: 28px;
   block-size: 28px;
-  fill: red;
+  fill: white;
+  mix-blend-mode: difference;
 }
 
 @media (width >= 1440px) {
