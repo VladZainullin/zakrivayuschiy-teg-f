@@ -273,22 +273,16 @@
 .button::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  inline-size: 0;
+  inset: 0;
+  inline-size: 100%;
   block-size: 100%;
   background: black;
-  transition: inline-size 0.5s ease-in-out;
-}
-
-.button span {
-  position: relative;
-  mix-blend-mode: difference;
-  color: white;
+  transform: translateX(-100%);
 }
 
 .button:hover::before {
-  inline-size: 100%;
+  transform: translateX(0);
+  transition: 0.5s linear;
 }
 
 .button:focus-visible {
@@ -302,11 +296,6 @@
   line-height: 90%;
   inline-size: 130px;
   block-size: 38px;
-}
-
-.card__button:hover {
-  background-color: black;
-  color: white;
 }
 
 .save-section {
@@ -344,6 +333,7 @@
 .save-section__floppy {
   inline-size: 28px;
   block-size: 28px;
+  fill: red;
 }
 
 @media (width >= 1440px) {
@@ -368,6 +358,9 @@
 .button__text {
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
+  position: relative;
+  mix-blend-mode: difference;
+  color: white;
 }
 
 .dialog {
