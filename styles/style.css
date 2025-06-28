@@ -59,7 +59,7 @@
 }
 
 .card__title {
-  font-weight: 700;
+  font-variation-settings: "wght" 700;
   line-height: 21px;
   padding: 5px 10px 5px 10px;
 }
