@@ -30,7 +30,6 @@
   font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   inline-size: clamp(375px, 100vw, 700px);
-  block-size: clamp(327px, 49vh, 368px);
   background-color: white;
 }
 
