@@ -66,14 +66,13 @@
 
 .card__image-container {
   position: relative;
+  border-block: 2px solid black;
 }
 
 .card__image {
   display: block;
   inline-size: 100%;
   block-size: 100%;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
 }
 
 .card__image_saturate {
