@@ -60,7 +60,7 @@
 
 .card__title {
   font-variation-settings: "wght" 700;
-  line-height: 117%;
+  line-height: 21px;
   padding: 5px 10px 5px 10px;
 }
 
@@ -122,8 +122,7 @@
 }
 
 .card__text {
-  line-height: 116%;
-  letter-spacing: 0;
+  line-height: 21px;
   display: flex;
   flex-direction: column;
   row-gap: 27px;
@@ -131,13 +130,14 @@
 
 .card__button-group {
   display: flex;
-  align-items: center;
-  column-gap: 12px;
+  column-gap: 6px;
   justify-content: end;
 }
 
 .card__icon-button {
   border: none;
+  display: flex;
+  align-items: center;
   background-color: transparent;
 }
 
