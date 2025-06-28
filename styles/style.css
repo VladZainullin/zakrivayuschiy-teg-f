@@ -112,7 +112,11 @@
 .card__watermark {
   font-family: var(--accent-font), fantasy;
   position: absolute;
-  text-shadow: 0 0 white;
+  text-shadow:
+      -1px 0 white,
+      0 1px white,
+      1px 0 white,
+      0 -1px white;
   opacity: 0.5;
   mix-blend-mode: hard-light;
   inset-inline-end: 25px;
