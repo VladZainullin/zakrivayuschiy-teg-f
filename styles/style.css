@@ -29,9 +29,15 @@
   border: 2px solid black;
   font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
-  inline-size: clamp(375px, 100vw, 700px);
+  inline-size: clamp(375px, 95vw, 700px);
   padding: 120px 14px;
   background-color: white;
+}
+
+@media (width >= 1440px) {
+  .header {
+    padding: 128px 120.5px;
+  }
 }
 
 .header__title {
@@ -54,7 +60,7 @@
 
 .card {
   background-color: white;
-  inline-size: clamp(375px, 100vw, 700px);
+  inline-size: clamp(375px, 95vw, 700px);
   border: 2px solid black;
 }
 
