@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   border: 2px solid black;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   inline-size: clamp(375px, 100vw, 700px);
   block-size: clamp(327px, 49vh, 368px);
@@ -106,7 +106,7 @@
 }
 
 .card__watermark {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   position: absolute;
   text-shadow: 0 0 white;
   opacity: 0.5;
@@ -188,7 +188,7 @@
 }
 
 .card__like-button {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   line-height: 90%;
   inline-size: 130px;
   block-size: 38px;
@@ -249,7 +249,7 @@
 }
 
 .button__text {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   position: relative;
   mix-blend-mode: difference;
@@ -298,7 +298,7 @@
 .dialog__title {
   grid-column: 2;
   grid-row: 1;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
