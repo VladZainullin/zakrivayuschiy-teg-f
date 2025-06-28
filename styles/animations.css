@@ -19,7 +19,7 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: scale 0.3s ease-in 0.1s backwards;
+  animation: scale 0.3s ease-in 0.1s;
   transform-origin: center center;
 }
 
@@ -79,5 +79,5 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: visibility 0.3s ease-in 0.3s backwards;
+  animation: visibility 0.3s ease-in 0.3s;
 }
