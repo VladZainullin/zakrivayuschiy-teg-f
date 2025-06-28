@@ -206,6 +206,7 @@
 
 .save-section__button {
   gap: 8px;
+  flex-direction: column;
   padding-block: 13px;
   padding-inline: 19px;
   font-size: 14px;
